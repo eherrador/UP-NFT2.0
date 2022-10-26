@@ -4,7 +4,7 @@ Universal Profile + LSP7 + LSP 8
 
 ## Steps
 Init the project
-´´´npm init
+´´´npm init´´´
 Keep default values.
 
 Install dependencies
