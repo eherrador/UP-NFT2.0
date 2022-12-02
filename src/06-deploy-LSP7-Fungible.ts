@@ -1,32 +1,18 @@
 import "dotenv/config";
 import { LSPFactory } from "@lukso/lsp-factory.js";
-import { RPC_ENDPOINT_L14, RPC_ENDPOINT_L16, RPC_ENDPOINT_MUMBAI, RPC_ENDPOINT_GOERLI, RPC_GANACHE } from "./constants";
+import { ERC725, ERC725JSONSchema } from "@erc725/erc725.js";
 import Web3 from "web3";
+import {  RPC_ENDPOINT_L14, RPC_ENDPOINT_L16, RPC_ENDPOINT_MUMBAI, RPC_ENDPOINT_GOERLI, RPC_ENDPOINT_GANACHE, L14chainId, L16chainId, MumbaichainId, GoerlichainId, GanachechainId, IPFS_LUKSO_GATEWAY } from "./constants";
 
+// Setup Web3
 const web3 = new Web3();
 
-console.log("process.env.PRIVATE_KEY: ", process.env.PRIVATE_KEY);
-
+// Load our Externally Owned Account (EOA)
 const myEOA = web3.eth.accounts.wallet.add(process.env.PRIVATE_KEY || "");
 console.log(`Loaded address: ${myEOA.address} from process.env`);
 
-//const lspFactory = new LSPFactory(RPC_ENDPOINT_L14, {
-//const lspFactory = new LSPFactory(RPC_ENDPOINT_L16, {
-//const lspFactory = new LSPFactory(RPC_ENDPOINT_MUMBAI, {
-//const lspFactory = new LSPFactory(RPC_ENDPOINT_GOERLI, {
-const lspFactory = new LSPFactory(RPC_GANACHE, {
-  deployKey: process.env.PRIVATE_KEY, // Private key of the account which will deploy any smart contract,
-  //chainId: 22,
-  //chainId: 2828,
-  //chainId: 80001, 
-  chainId: 5777,
-  //chainId: 5, 
-  // 22 for L14
-  // 2828 for L16
-  // 80001 for Mumbai
-  // 5 for Goerli
-  // 5777 for Ganache
-});
+// Initialize the LSPFactory with the L16 RPC endpoint and your EOA's private key, which will deploy the UP smart contracts
+const lspFactory = new LSPFactory(RPC_ENDPOINT_L16, { deployKey: process.env.PRIVATE_KEY, chainId: 2828 });
 
 const deploymentEventsLSP7NFT2 = [];
 
