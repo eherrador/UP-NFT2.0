@@ -1,22 +1,17 @@
-// https://docs.lukso.tech/tools/erc725js/getting-started
-
 import { ERC725, ERC725JSONSchema } from "@erc725/erc725.js";
 import Web3 from "web3";
-import LSP3 from "@erc725/erc725.js/schemas/LSP3UniversalProfileMetadata.json";
-import { RPC_ENDPOINT_L14, RPC_ENDPOINT_L16, RPC_ENDPOINT_MUMBAI, RPC_ENDPOINT_GOERLI, RPC_GANACHE } from "./constants";
+import erc725schema from "@erc725/erc725.js/schemas/LSP3UniversalProfileMetadata.json";
+import {  RPC_ENDPOINT_L14, RPC_ENDPOINT_L16, RPC_ENDPOINT_MUMBAI, RPC_ENDPOINT_GOERLI, RPC_ENDPOINT_GANACHE, L14chainId, L16chainId, MumbaichainId, GoerlichainId, GanachechainId, Ipfs_Lukso_Gateway } from "./constants";
 
-const upAddress = "0x96A9280dA1b7A44B9702F684Ff8fE2bf112D8787"; //"0xc6D4e65AbaB748C41a772d2F28DD0D0ecEF47Aec";
-//const provider = new Web3.providers.HttpProvider(RPC_ENDPOINT_L14);
-//const provider = new Web3.providers.HttpProvider(RPC_ENDPOINT_L16);
-//const provider = new Web3.providers.HttpProvider(RPC_ENDPOINT_MUMBAI);
-//const provider = new Web3.providers.HttpProvider(RPC_ENDPOINT_GOERLI);
-const provider = new Web3.providers.HttpProvider(RPC_GANACHE);
+// Parameters for ERC725 Instance
+const upAddress = "0x4eD4d830A514C83aD0D09E80f98046f91d835f35";
+const provider = new Web3.providers.HttpProvider(RPC_ENDPOINT_L16);
 const config = {
-  ipfsGateway: "https://ipfs.lukso.network/ipfs/",
+  ipfsGateway: Ipfs_Lukso_Gateway,
 };
 
 const erc725 = new ERC725(
-  LSP3 as ERC725JSONSchema[],
+  erc725schema as ERC725JSONSchema[],
   upAddress,
   provider,
   config

@@ -1,10 +1,10 @@
-import "dotenv/config";
-import { LSPFactory } from "@lukso/lsp-factory.js";
-import {  RPC_ENDPOINT_L14, RPC_ENDPOINT_L16, RPC_ENDPOINT_MUMBAI, RPC_ENDPOINT_GOERLI, RPC_ENDPOINT_GANACHE, L14chainId, L16chainId, MumbaichainId, GoerlichainId, GanachechainId, Ipfs_Lukso_Gateway } from "./constants";
-import Web3 from "web3";
+require('dotenv').config();
+const { LSPFactory } = require("@lukso/lsp-factory.js");
+const Web3 = require("web3");
+const { RPC_ENDPOINT_L14, RPC_ENDPOINT_L16, RPC_ENDPOINT_MUMBAI, RPC_ENDPOINT_GOERLI, RPC_ENDPOINT_GANACHE, L14chainId, L16chainId, MumbaichainId, GoerlichainId, GanachechainId } = require("./constants");
 
 // Setup Web3
-const web3 = new Web3();
+const web3 = new Web3(RPC_ENDPOINT_L16);
 
 console.log("process.env.PRIVATE_KEY: ", process.env.PRIVATE_KEY);
 
@@ -13,8 +13,9 @@ const myEOA = web3.eth.accounts.wallet.add(process.env.PRIVATE_KEY || "");
 console.log(`Loaded address: ${myEOA.address} from process.env`);
 
 // Initialize the LSPFactory with the L14 RPC endpoint and your EOA's private key, which will deploy the UP smart contracts
-const lspFactory = new LSPFactory(RPC_ENDPOINT_L16, { deployKey: process.env.PRIVATE_KEY, chainId: 2828 });
+const lspFactory = new LSPFactory(RPC_ENDPOINT_L16, process.env.PRIVATE_KEY, L16chainId);
 
+/*
 const myLSP3MetaData = {
   name: "Edgar-Herrador",
   description: "My name is Edgar Herrador",
@@ -24,7 +25,7 @@ const myLSP3MetaData = {
       height: 860,
       hashFunction: 'keccak256(bytes)',
       hash: '0xe3c1b349dd4990624e6ce4e112d1bb6ec23e6ee33536d0119fddb6538c48e33e', // bytes32 hex string of the image hash
-      url: 'QmW8GxjHMuePYcnZCoimm8ETPFcfmq1m4GXkU12o23WafW',
+      url: 'ipfs://QmW8GxjHMuePYcnZCoimm8ETPFcfmq1m4GXkU12o23WafW',
     },
   ],
   backgroundImage: [
@@ -33,7 +34,7 @@ const myLSP3MetaData = {
       height: 776,
       hashFunction: 'keccak256(bytes)',
       hash: '0xd54ecc5ef0327364436c5acda0d673a1b25feea1ceb40d579d62c5d5d8d2d098', // bytes32 hex string of the image hash
-      url: 'QmeBKhfrF7dyEY9cfBnE2sHANqQ4kq6Z1pShLHLv73cJdS',
+      url: 'ipfs://QmeBKhfrF7dyEY9cfBnE2sHANqQ4kq6Z1pShLHLv73cJdS',
     },
   ],
   tags: ['Web3', 'ZK Proof', 'Token Engineering', 'IP-NFT', 'AI'],
@@ -69,9 +70,8 @@ const main = async () => {
     }
   });
 
-  //console.log("UP Address", myContracts.LSP0ERC725Account?.address);
-  //console.log(myContracts);
   console.log("Done");
 };
 
 main();
+*/
