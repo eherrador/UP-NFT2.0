@@ -1,0 +1,845 @@
+=============================================================================================================================================================================================================================================================
+================================================================================================================== Universal Profile LSP0 ===================================================================================================================
+=============================================================================================================================================================================================================================================================
+
+process.env.PRIVATE_KEY:  0xda4dc11b534f0b1330981d896c69aa16069c1a150db5def0116ffc886f1b3e0c
+Loaded address: 0xdD0E5E20219bc787B0936451d48d6F4602262372 from process.env
+Deploying UP with lsp-factory.js
+{
+  type: 'BASE_CONTRACT_DEPLOYMENT',
+  contractName: 'LSP0ERC725Account',
+  status: 'COMPLETE',
+  receipt: {
+    to: null,
+    from: '0xdD0E5E20219bc787B0936451d48d6F4602262372',
+    contractAddress: '0xea42Cb4adc1d00AD706BCB07105C2Ffbe569F1c7',
+    transactionIndex: 0,
+    gasUsed: BigNumber { _hex: '0x2110d8', _isBigNumber: true },
+    logsBloom: '0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000480000000000000000000000000000000000000000000000400000000000000000000000000004000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000',
+    blockHash: '0x8e930350443f62a5c554abfa636538244ca29f39e0e62c5b55c128cde0b94d58',
+    transactionHash: '0x337db535bb29498862bc0d4abc1eeef54e65207b7dceb5d0c83d1f42279b8f39',
+    logs: [ [Object] ],
+    blockNumber: 2370891,
+    confirmations: 1,
+    cumulativeGasUsed: BigNumber { _hex: '0x2110d8', _isBigNumber: true },
+    effectiveGasPrice: BigNumber { _hex: '0x02540be400', _isBigNumber: true },
+    status: 1,
+    type: 2,
+    byzantium: true,
+    events: [ [Object] ]
+  }
+}
+{
+  type: 'BASE_CONTRACT_DEPLOYMENT',
+  contractName: 'LSP6KeyManager',
+  status: 'COMPLETE',
+  receipt: {
+    to: null,
+    from: '0xdD0E5E20219bc787B0936451d48d6F4602262372',
+    contractAddress: '0x782c91BBE8f631B7024cA33401D8ac7c9F342719',
+    transactionIndex: 1,
+    gasUsed: BigNumber { _hex: '0x27917c', _isBigNumber: true },
+    logsBloom: '0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000080000000000000000000020000000000000000000000000400000000000000000000000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000',
+    blockHash: '0x17e6144c4ffb018d373d61a0c0ef5566c2c7c032544aa08cb8d6ca6baf31bb00',
+    transactionHash: '0x06923aa381ab5444a72b35bc73fed5267428ae5a55b5a104a151a11a70460a80',
+    logs: [ [Object] ],
+    blockNumber: 2370892,
+    confirmations: 1,
+    cumulativeGasUsed: BigNumber { _hex: '0x3ea01e', _isBigNumber: true },
+    effectiveGasPrice: BigNumber { _hex: '0x02540be400', _isBigNumber: true },
+    status: 1,
+    type: 2,
+    byzantium: true,
+    events: [ [Object] ]
+  }
+}
+{
+  type: 'BASE_CONTRACT_DEPLOYMENT',
+  contractName: 'LSP1UniversalReceiverDelegate',
+  status: 'COMPLETE',
+  receipt: {
+    to: null,
+    from: '0xdD0E5E20219bc787B0936451d48d6F4602262372',
+    contractAddress: '0x09790f7A6ec28E085A7Fb7898F42Fa04156cf948',
+    transactionIndex: 0,
+    gasUsed: BigNumber { _hex: '0x170ea2', _isBigNumber: true },
+    logsBloom: '0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000',
+    blockHash: '0x17e6144c4ffb018d373d61a0c0ef5566c2c7c032544aa08cb8d6ca6baf31bb00',
+    transactionHash: '0xa854a918445cf22c2acc683aa55200e1db5dc0245c7b8b4da34b044bcbc0a565',
+    logs: [],
+    blockNumber: 2370892,
+    confirmations: 1,
+    cumulativeGasUsed: BigNumber { _hex: '0x170ea2', _isBigNumber: true },
+    effectiveGasPrice: BigNumber { _hex: '0x02540be400', _isBigNumber: true },
+    status: 1,
+    type: 2,
+    byzantium: true,
+    events: []
+  }
+}
+{
+  type: 'PROXY_DEPLOYMENT',
+  contractName: 'LSP0ERC725Account',
+  status: 'PENDING',
+  transaction: {
+    type: 2,
+    chainId: 2828,
+    nonce: 17,
+    maxPriorityFeePerGas: BigNumber { _hex: '0x59682f00', _isBigNumber: true },
+    maxFeePerGas: BigNumber { _hex: '0x59682f0e', _isBigNumber: true },
+    gasPrice: null,
+    gasLimit: BigNumber { _hex: '0xf723', _isBigNumber: true },
+    to: null,
+    value: BigNumber { _hex: '0x00', _isBigNumber: true },
+    data: '0x3d602d80600a3d3981f3363d3d373d3d3d363d73ea42cb4adc1d00ad706bcb07105c2ffbe569f1c75af43d82803e903d91602b57fd5bf3000000000000000000000000dd0e5e20219bc787b0936451d48d6f4602262372',
+    accessList: [],
+    hash: '0x34a2de9e936984b8e68ab6e75c63e7ff4c85fcd9acd610e29df4b60c3bc43a73',
+    v: 0,
+    r: '0xeef85e154878ee2c49befd721c68adf2e45b45e5e4a9ab77df7a1a22c117aa3d',
+    s: '0x6f8912134dff292ef10c1500a03900deb0466445ab372e3614f33fd0c6452397',
+    from: '0xdD0E5E20219bc787B0936451d48d6F4602262372',
+    confirmations: 0,
+    wait: [Function (anonymous)]
+  }
+}
+{
+  type: 'PROXY_DEPLOYMENT',
+  contractName: 'LSP0ERC725Account',
+  status: 'COMPLETE',
+  contractAddress: '0x300122Af053D7B44352c32B1C9ebb78582E95542',
+  receipt: {
+    to: null,
+    from: '0xdD0E5E20219bc787B0936451d48d6F4602262372',
+    contractAddress: '0x300122Af053D7B44352c32B1C9ebb78582E95542',
+    transactionIndex: 0,
+    gasUsed: BigNumber { _hex: '0xf723', _isBigNumber: true },
+    logsBloom: '0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000',
+    blockHash: '0xb2b77cc207d578ecd1e26f9137dc76290ecfac813f526a1be7fd117ccbae2c64',
+    transactionHash: '0x34a2de9e936984b8e68ab6e75c63e7ff4c85fcd9acd610e29df4b60c3bc43a73',
+    logs: [],
+    blockNumber: 2370897,
+    confirmations: 2,
+    cumulativeGasUsed: BigNumber { _hex: '0xf723', _isBigNumber: true },
+    effectiveGasPrice: BigNumber { _hex: '0x59682f07', _isBigNumber: true },
+    status: 1,
+    type: 2,
+    byzantium: true,
+    events: []
+  }
+}
+{
+  type: 'TRANSACTION',
+  contractName: 'LSP0ERC725Account',
+  functionName: 'initialize(address)',
+  status: 'PENDING',
+  transaction: {
+    type: 2,
+    chainId: 2828,
+    nonce: 18,
+    maxPriorityFeePerGas: BigNumber { _hex: '0x02540be400', _isBigNumber: true },
+    maxFeePerGas: BigNumber { _hex: '0x02540be400', _isBigNumber: true },
+    gasPrice: null,
+    gasLimit: BigNumber { _hex: '0x02b5e1', _isBigNumber: true },
+    to: '0x300122Af053D7B44352c32B1C9ebb78582E95542',
+    value: BigNumber { _hex: '0x00', _isBigNumber: true },
+    data: '0xc4d66de8000000000000000000000000dd0e5e20219bc787b0936451d48d6f4602262372',
+    accessList: [],
+    hash: '0x0255f643c5fa96c57ecb43057c59e0298e0ab5209e2bcf754f6011ac8c44d12d',
+    v: 0,
+    r: '0x72c3727be25de004fb17d7c7f304bad72d04bcbf2c790bc22ce1c312be69e222',
+    s: '0x50ab6637c31976347db1c2a6d8ca085e1f1023925ebdb387d369b02ec061ea31',
+    from: '0xdD0E5E20219bc787B0936451d48d6F4602262372',
+    confirmations: 0,
+    wait: [Function (anonymous)]
+  }
+}
+{
+  type: 'TRANSACTION',
+  contractName: 'LSP0ERC725Account',
+  functionName: 'initialize(address)',
+  status: 'COMPLETE',
+  receipt: {
+    to: '0x300122Af053D7B44352c32B1C9ebb78582E95542',
+    from: '0xdD0E5E20219bc787B0936451d48d6F4602262372',
+    contractAddress: null,
+    transactionIndex: 0,
+    gasUsed: BigNumber { _hex: '0x0127ad', _isBigNumber: true },
+    logsBloom: '0x00000000000000000000000000000000000800000000000000800000000000000000000000000000000000000000000000000000000000000000000000000000000040000000000000000000000000000001000000000000000000000000000000000000020000000000000000000800000000000000000000000000000000401000000000001000000100000000000000000000000080000001000000000000000000000000000000000000000400000000000000000000000000000000000000000080000020000000000000050000000000000000000000000000000020000000000000000000000000000000000000000000000000000000400400000000',
+    blockHash: '0xc09fac4db4cca3a66bc783f8d5609dce59abf568913bda703ddd9dc6da0d37eb',
+    transactionHash: '0x0255f643c5fa96c57ecb43057c59e0298e0ab5209e2bcf754f6011ac8c44d12d',
+    logs: [ [Object], [Object], [Object] ],
+    blockNumber: 2370902,
+    confirmations: 2,
+    cumulativeGasUsed: BigNumber { _hex: '0x0127ad', _isBigNumber: true },
+    effectiveGasPrice: BigNumber { _hex: '0x02540be400', _isBigNumber: true },
+    status: 1,
+    type: 2,
+    byzantium: true,
+    events: [ [Object], [Object], [Object] ]
+  }
+}
+{
+  type: 'PROXY_DEPLOYMENT',
+  contractName: 'LSP1UniversalReceiverDelegate',
+  status: 'PENDING',
+  transaction: {
+    type: 2,
+    chainId: 2828,
+    nonce: 19,
+    maxPriorityFeePerGas: BigNumber { _hex: '0x59682f00', _isBigNumber: true },
+    maxFeePerGas: BigNumber { _hex: '0x59682f0e', _isBigNumber: true },
+    gasPrice: null,
+    gasLimit: BigNumber { _hex: '0xf5bf', _isBigNumber: true },
+    to: null,
+    value: BigNumber { _hex: '0x00', _isBigNumber: true },
+    data: '0x3d602d80600a3d3981f3363d3d373d3d3d363d7309790f7a6ec28e085a7fb7898f42fa04156cf9485af43d82803e903d91602b57fd5bf3',
+    accessList: [],
+    hash: '0x4154cd9fc4094f49a7385f8a8e0f535ff7acdddbd711bc13ceecc31f79770bea',
+    v: 0,
+    r: '0x64bed064ab4e34b8be2962f70899f4208ed1d59761b548bd720fb4abdcb6fff4',
+    s: '0x36c57af2a43f6f2458ce0ae2559250bb1ad56a4469f2e03d4363743d8e0967de',
+    from: '0xdD0E5E20219bc787B0936451d48d6F4602262372',
+    confirmations: 0,
+    wait: [Function (anonymous)]
+  }
+}
+{
+  type: 'PROXY_DEPLOYMENT',
+  contractName: 'LSP6KeyManager',
+  status: 'PENDING',
+  transaction: {
+    type: 2,
+    chainId: 2828,
+    nonce: 20,
+    maxPriorityFeePerGas: BigNumber { _hex: '0x59682f00', _isBigNumber: true },
+    maxFeePerGas: BigNumber { _hex: '0x59682f0e', _isBigNumber: true },
+    gasPrice: null,
+    gasLimit: BigNumber { _hex: '0xf5bf', _isBigNumber: true },
+    to: null,
+    value: BigNumber { _hex: '0x00', _isBigNumber: true },
+    data: '0x3d602d80600a3d3981f3363d3d373d3d3d363d73782c91bbe8f631b7024ca33401d8ac7c9f3427195af43d82803e903d91602b57fd5bf3',
+    accessList: [],
+    hash: '0xb04664bb5364e93901e1a486d7c1cc0f935309998fe1ecff3b97e63ad2e9caf9',
+    v: 1,
+    r: '0x0ba59a0fb06b3b51c5101cf67e8df74e893897ffd10ed9fb28b5a1b95e3efeba',
+    s: '0x7f688e6e48018cefab93e0b84b26353170876ad6cd13422fb5a5ff8bc5b9cc6f',
+    from: '0xdD0E5E20219bc787B0936451d48d6F4602262372',
+    confirmations: 0,
+    wait: [Function (anonymous)]
+  }
+}
+{
+  type: 'PROXY_DEPLOYMENT',
+  contractName: 'LSP1UniversalReceiverDelegate',
+  status: 'COMPLETE',
+  contractAddress: '0xaaD36d6Eb1B36e1435F798800d3F444b472Bef8E',
+  receipt: {
+    to: null,
+    from: '0xdD0E5E20219bc787B0936451d48d6F4602262372',
+    contractAddress: '0xaaD36d6Eb1B36e1435F798800d3F444b472Bef8E',
+    transactionIndex: 0,
+    gasUsed: BigNumber { _hex: '0xf5bf', _isBigNumber: true },
+    logsBloom: '0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000',
+    blockHash: '0x950aed13e28d0069d6e8f25f60c0cf3ccc491e666ce3b03b3bc5b8eab5a8c72e',
+    transactionHash: '0x4154cd9fc4094f49a7385f8a8e0f535ff7acdddbd711bc13ceecc31f79770bea',
+    logs: [],
+    blockNumber: 2370906,
+    confirmations: 1,
+    cumulativeGasUsed: BigNumber { _hex: '0xf5bf', _isBigNumber: true },
+    effectiveGasPrice: BigNumber { _hex: '0x59682f07', _isBigNumber: true },
+    status: 1,
+    type: 2,
+    byzantium: true,
+    events: []
+  }
+}
+{
+  type: 'PROXY_DEPLOYMENT',
+  contractName: 'LSP6KeyManager',
+  status: 'COMPLETE',
+  contractAddress: '0x2dAc2e7AA603d183d4A1b1D464411FB26c7C85aa',
+  receipt: {
+    to: null,
+    from: '0xdD0E5E20219bc787B0936451d48d6F4602262372',
+    contractAddress: '0x2dAc2e7AA603d183d4A1b1D464411FB26c7C85aa',
+    transactionIndex: 0,
+    gasUsed: BigNumber { _hex: '0xf5bf', _isBigNumber: true },
+    logsBloom: '0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000',
+    blockHash: '0x7701fe949d5d5c7f8d23159fa8553854fb974261c710e67066b571032d4d2f62',
+    transactionHash: '0xb04664bb5364e93901e1a486d7c1cc0f935309998fe1ecff3b97e63ad2e9caf9',
+    logs: [],
+    blockNumber: 2370907,
+    confirmations: 2,
+    cumulativeGasUsed: BigNumber { _hex: '0xf5bf', _isBigNumber: true },
+    effectiveGasPrice: BigNumber { _hex: '0x59682f07', _isBigNumber: true },
+    status: 1,
+    type: 2,
+    byzantium: true,
+    events: []
+  }
+}
+{
+  type: 'TRANSACTION',
+  contractName: 'LSP6KeyManager',
+  functionName: 'initialize(address)',
+  status: 'PENDING',
+  transaction: {
+    type: 2,
+    chainId: 2828,
+    nonce: 21,
+    maxPriorityFeePerGas: BigNumber { _hex: '0x02540be400', _isBigNumber: true },
+    maxFeePerGas: BigNumber { _hex: '0x02540be400', _isBigNumber: true },
+    gasPrice: null,
+    gasLimit: BigNumber { _hex: '0x024b69', _isBigNumber: true },
+    to: '0x2dAc2e7AA603d183d4A1b1D464411FB26c7C85aa',
+    value: BigNumber { _hex: '0x00', _isBigNumber: true },
+    data: '0xc4d66de8000000000000000000000000300122af053d7b44352c32b1c9ebb78582e95542',
+    accessList: [],
+    hash: '0xf9e62e33b9f51d13de9604557cca0b9b8dfba1d70af312b27e3ffcb478c4c7aa',
+    v: 0,
+    r: '0xd98631551e0b2b1fb29425d41ef212dee20fbf64a7763a734caea0826959434c',
+    s: '0x6bba7246968798f12bfeab708faccd02380b0f8bed96ce85ac84bc2e274fc157',
+    from: '0xdD0E5E20219bc787B0936451d48d6F4602262372',
+    confirmations: 0,
+    wait: [Function (anonymous)]
+  }
+}
+{
+  type: 'TRANSACTION',
+  contractName: 'LSP6KeyManager',
+  functionName: 'initialize(address)',
+  status: 'COMPLETE',
+  receipt: {
+    to: '0x2dAc2e7AA603d183d4A1b1D464411FB26c7C85aa',
+    from: '0xdD0E5E20219bc787B0936451d48d6F4602262372',
+    contractAddress: null,
+    transactionIndex: 0,
+    gasUsed: BigNumber { _hex: '0xbee5', _isBigNumber: true },
+    logsBloom: '0x00000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000080000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000800000000000000040000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000',
+    blockHash: '0xa56b607b3c903da4e702309438712af50d0fcbc7e7c86fc55c9166280bdf3b9d',
+    transactionHash: '0xf9e62e33b9f51d13de9604557cca0b9b8dfba1d70af312b27e3ffcb478c4c7aa',
+    logs: [ [Object] ],
+    blockNumber: 2370911,
+    confirmations: 1,
+    cumulativeGasUsed: BigNumber { _hex: '0xbee5', _isBigNumber: true },
+    effectiveGasPrice: BigNumber { _hex: '0x02540be400', _isBigNumber: true },
+    status: 1,
+    type: 2,
+    byzantium: true,
+    events: [ [Object] ]
+  }
+}
+{
+  type: 'TRANSACTION',
+  contractName: 'LSP0ERC725Account',
+  functionName: 'setData(bytes32[],bytes[])',
+  status: 'PENDING',
+  transaction: {
+    type: 2,
+    chainId: 2828,
+    nonce: 22,
+    maxPriorityFeePerGas: BigNumber { _hex: '0x02540be400', _isBigNumber: true },
+    maxFeePerGas: BigNumber { _hex: '0x02540be400', _isBigNumber: true },
+    gasPrice: null,
+    gasLimit: BigNumber { _hex: '0x06eddc', _isBigNumber: true },
+    to: '0x300122Af053D7B44352c32B1C9ebb78582E95542',
+    value: BigNumber { _hex: '0x00', _isBigNumber: true },
+    data: '0x14a6e2930000000000000000000000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000000000014000000000000000000000000000000000000000000000000000000000000000070cfc51aec37c55a4d0b1a65c6255c4bf2fbdf6277f3cc0730c45b828b6db8b474b80742de2bf82acb3630000aad36d6eb1b36e1435f798800d3f444b472bef8edf30dba06db6a30e65354d9a64c609861f089545ca58c6b4dbe31a5f338cb0e3df30dba06db6a30e65354d9a64c60986000000000000000000000000000000004b80742de2bf82acb3630000dd0e5e20219bc787b0936451d48d6f4602262372df30dba06db6a30e65354d9a64c60986000000000000000000000000000000015ef83ad9559033e6e941db7d7c495acdce616347d28e90c7ce47cbfcfcad3bc5000000000000000000000000000000000000000000000000000000000000000700000000000000000000000000000000000000000000000000000000000000e00000000000000000000000000000000000000000000000000000000000000120000000000000000000000000000000000000000000000000000000000000016000000000000000000000000000000000000000000000000000000000000001a000000000000000000000000000000000000000000000000000000000000001e0000000000000000000000000000000000000000000000000000000000000022000000000000000000000000000000000000000000000000000000000000002600000000000000000000000000000000000000000000000000000000000000014aad36d6eb1b36e1435f798800d3f444b472bef8e00000000000000000000000000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000800000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000014dd0e5e20219bc787b0936451d48d6f4602262372000000000000000000000000000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000000030000000000000000000000000000000000000000000000000000000000000014aad36d6eb1b36e1435f798800d3f444b472bef8e00000000000000000000000000000000000000000000000000000000000000000000000000000000000000596f357c6adb1b102fbb219fdda307181473c4a4431fb019e687cce85b159385a6f01437ea697066733a2f2f516d583470395472646d7137544e7a6459544e33797264434835383733725a62617677504a7a36426875534b485700000000000000',
+    accessList: [],
+    hash: '0x17067a59cb2c79ced3791b630283315130251a1ec24374f14043ad0a3564bba9',
+    v: 0,
+    r: '0xb9913ed0edbf6387af8d71abadfe6ec38ef8ba969be70ac9cea1911b6343f27f',
+    s: '0x17f10ea115693c86351bbbcd2b0e7fba03d30727586a38b033628374841884d8',
+    from: '0xdD0E5E20219bc787B0936451d48d6F4602262372',
+    confirmations: 0,
+    wait: [Function (anonymous)]
+  }
+}
+{
+  type: 'TRANSACTION',
+  contractName: 'LSP0ERC725Account',
+  functionName: 'transferOwnership(address)',
+  status: 'PENDING',
+  transaction: {
+    type: 2,
+    chainId: 2828,
+    nonce: 23,
+    maxPriorityFeePerGas: BigNumber { _hex: '0x02540be400', _isBigNumber: true },
+    maxFeePerGas: BigNumber { _hex: '0x02540be400', _isBigNumber: true },
+    gasPrice: null,
+    gasLimit: BigNumber { _hex: '0x02470a', _isBigNumber: true },
+    to: '0x300122Af053D7B44352c32B1C9ebb78582E95542',
+    value: BigNumber { _hex: '0x00', _isBigNumber: true },
+    data: '0xf2fde38b0000000000000000000000002dac2e7aa603d183d4a1b1d464411fb26c7c85aa',
+    accessList: [],
+    hash: '0xae54e3875fdee22d3a82182a281a37f3c45323d3bbc15fde0db87bccc1e15f4a',
+    v: 1,
+    r: '0xdc3e3b604d8e4080b6b51398f0394ef55230b671a89d9c679fb8979fefc973a5',
+    s: '0x05629866d900d828960aafa543bfa1b45714495ff2f8bbe8805acf215ed5fe71',
+    from: '0xdD0E5E20219bc787B0936451d48d6F4602262372',
+    confirmations: 0,
+    wait: [Function (anonymous)]
+  }
+}
+{
+  type: 'TRANSACTION',
+  contractName: 'LSP0ERC725Account',
+  functionName: 'setData(bytes32[],bytes[])',
+  status: 'COMPLETE',
+  receipt: {
+    to: '0x300122Af053D7B44352c32B1C9ebb78582E95542',
+    from: '0xdD0E5E20219bc787B0936451d48d6F4602262372',
+    contractAddress: null,
+    transactionIndex: 0,
+    gasUsed: BigNumber { _hex: '0x0553bf', _isBigNumber: true },
+    logsBloom: '0x00000000002000000000000000000000000000000000000000000000000000000000010000000000000000000000008000000000000000000000000000000000000000000000100000000000000000000000001000000000000000000000000000000100000000000000002000000000000080000000000000000000000080001000000000400000000100000100000010000000001000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000080000020000008000008040001000000000000000008000000000000800000000000000000000000000000000000000000000004000040400000000000',
+    blockHash: '0x1ae190a2df18b881f9ce91ecf3466bbe75f834cc38a9d10ca9ac09c0a733bfca',
+    transactionHash: '0x17067a59cb2c79ced3791b630283315130251a1ec24374f14043ad0a3564bba9',
+    logs: [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object]
+    ],
+    blockNumber: 2370915,
+    confirmations: 2,
+    cumulativeGasUsed: BigNumber { _hex: '0x0553bf', _isBigNumber: true },
+    effectiveGasPrice: BigNumber { _hex: '0x02540be400', _isBigNumber: true },
+    status: 1,
+    type: 2,
+    byzantium: true,
+    events: [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object]
+    ]
+  }
+}
+{
+  type: 'TRANSACTION',
+  contractName: 'LSP0ERC725Account',
+  functionName: 'transferOwnership(address)',
+  status: 'COMPLETE',
+  receipt: {
+    to: '0x300122Af053D7B44352c32B1C9ebb78582E95542',
+    from: '0xdD0E5E20219bc787B0936451d48d6F4602262372',
+    contractAddress: null,
+    transactionIndex: 1,
+    gasUsed: BigNumber { _hex: '0xbf02', _isBigNumber: true },
+    logsBloom: '0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000',
+    blockHash: '0x1ae190a2df18b881f9ce91ecf3466bbe75f834cc38a9d10ca9ac09c0a733bfca',
+    transactionHash: '0xae54e3875fdee22d3a82182a281a37f3c45323d3bbc15fde0db87bccc1e15f4a',
+    logs: [],
+    blockNumber: 2370915,
+    confirmations: 2,
+    cumulativeGasUsed: BigNumber { _hex: '0x0612c1', _isBigNumber: true },
+    effectiveGasPrice: BigNumber { _hex: '0x02540be400', _isBigNumber: true },
+    status: 1,
+    type: 2,
+    byzantium: true,
+    events: []
+  }
+}
+{
+  type: 'TRANSACTION',
+  contractName: 'LSP0ERC725Account',
+  status: 'PENDING',
+  functionName: 'claimOwnership()',
+  transaction: {
+    type: 2,
+    chainId: 2828,
+    nonce: 24,
+    maxPriorityFeePerGas: BigNumber { _hex: '0x02540be400', _isBigNumber: true },
+    maxFeePerGas: BigNumber { _hex: '0x02540be400', _isBigNumber: true },
+    gasPrice: null,
+    gasLimit: BigNumber { _hex: '0x025d50', _isBigNumber: true },
+    to: '0x2dAc2e7AA603d183d4A1b1D464411FB26c7C85aa',
+    value: BigNumber { _hex: '0x00', _isBigNumber: true },
+    data: '0x09c5eabe000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000000044e71e0c800000000000000000000000000000000000000000000000000000000',
+    accessList: [],
+    hash: '0x5328dc44ab4ce9612c54cdb550a60cc85fdcff0267aadcbf364e2a19b9c36749',
+    v: 1,
+    r: '0x5a87ed16e706052e5da75399d398b511a070a91885758b7746843fef7cd0ef05',
+    s: '0x5b0eef153487d7f431870d74be984621f24dc9cc959cc9ed0b5c03f2fe4a7b18',
+    from: '0xdD0E5E20219bc787B0936451d48d6F4602262372',
+    confirmations: 0,
+    wait: [Function (anonymous)]
+  }
+}
+{
+  type: 'TRANSACTION',
+  contractName: 'LSP0ERC725Account',
+  functionName: 'claimOwnership()',
+  status: 'COMPLETE',
+  receipt: {
+    to: '0x2dAc2e7AA603d183d4A1b1D464411FB26c7C85aa',
+    from: '0xdD0E5E20219bc787B0936451d48d6F4602262372',
+    contractAddress: null,
+    transactionIndex: 0,
+    gasUsed: BigNumber { _hex: '0xc236', _isBigNumber: true },
+    logsBloom: '0x00040000000000000000000000000000000800000020000000800000000000000000000008000000000000000000000000000000000000000000000000000000000040000000000000000000000000000001000000000000000000000000000000000001020000000000000000000800000000000000000000000000000000401000000000000400000100000000000000000000000000000000000200000200000000000080000000000000000000000000000000000000000000000000000000000080000800000000000000010000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000000',
+    blockHash: '0xd16d59f447c098e8f39ec4140cb22aec09733cef9b8b1091c03810e40f428a47',
+    transactionHash: '0x5328dc44ab4ce9612c54cdb550a60cc85fdcff0267aadcbf364e2a19b9c36749',
+    logs: [ [Object], [Object] ],
+    blockNumber: 2370921,
+    confirmations: 1,
+    cumulativeGasUsed: BigNumber { _hex: '0xc236', _isBigNumber: true },
+    effectiveGasPrice: BigNumber { _hex: '0x02540be400', _isBigNumber: true },
+    status: 1,
+    type: 2,
+    byzantium: true,
+    events: [ [Object], [Object] ]
+  }
+}
+{
+  type: 'TRANSACTION',
+  contractName: 'LSP0ERC725Account',
+  status: 'PENDING',
+  functionName: 'setData(bytes32,bytes)',
+  transaction: {
+    type: 2,
+    chainId: 2828,
+    nonce: 25,
+    maxPriorityFeePerGas: BigNumber { _hex: '0x02540be400', _isBigNumber: true },
+    maxFeePerGas: BigNumber { _hex: '0x02540be400', _isBigNumber: true },
+    gasPrice: null,
+    gasLimit: BigNumber { _hex: '0x0261fb', _isBigNumber: true },
+    to: '0x2dAc2e7AA603d183d4A1b1D464411FB26c7C85aa',
+    value: BigNumber { _hex: '0x00', _isBigNumber: true },
+    data: '0x09c5eabe000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000000847f23690c4b80742de2bf82acb3630000dd0e5e20219bc787b0936451d48d6f4602262372000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000007fbf00000000000000000000000000000000000000000000000000000000',
+    accessList: [],
+    hash: '0x8d856399bebcfe4e19e74c62d86a38c7e21adaf036fa8ee0425fa5b0fd67c5fc',
+    v: 1,
+    r: '0x05eae859f5bd65e10c925ed6d4d02861c1a88d05eae37ab226cbeaaad3c97fd6',
+    s: '0x3232af7bfbae66496938b8bffc5676d99c29533f511915fdba5cda625e3ddc1f',
+    from: '0xdD0E5E20219bc787B0936451d48d6F4602262372',
+    confirmations: 0,
+    wait: [Function (anonymous)]
+  }
+}
+{
+  type: 'TRANSACTION',
+  contractName: 'LSP0ERC725Account',
+  functionName: 'setData(bytes32,bytes)',
+  status: 'COMPLETE',
+  receipt: {
+    to: '0x2dAc2e7AA603d183d4A1b1D464411FB26c7C85aa',
+    from: '0xdD0E5E20219bc787B0936451d48d6F4602262372',
+    contractAddress: null,
+    transactionIndex: 0,
+    gasUsed: BigNumber { _hex: '0xd99d', _isBigNumber: true },
+    logsBloom: '0x00000000000000000000000000000000000000000020000000000000000000000000000008000000000000000000008000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001020000000000000000000800000080000000000000000000000000001000000000000400000100000000000000000000000000000000000000000200000000002000000000000000000000000000000000000000000000000000000000000080000820000000000000040000000000000000000000000000000020000000000000000000000000000000000000000000000000000000400000000000',
+    blockHash: '0xe44e43e1bcf2151e63d7c40a59e928d8901081690419a78d0a57037d902bbc2a',
+    transactionHash: '0x8d856399bebcfe4e19e74c62d86a38c7e21adaf036fa8ee0425fa5b0fd67c5fc',
+    logs: [ [Object], [Object] ],
+    blockNumber: 2370925,
+    confirmations: 1,
+    cumulativeGasUsed: BigNumber { _hex: '0xd99d', _isBigNumber: true },
+    effectiveGasPrice: BigNumber { _hex: '0x02540be400', _isBigNumber: true },
+    status: 1,
+    type: 2,
+    byzantium: true,
+    events: [ [Object], [Object] ]
+  }
+}
+Universal Profile deployment completed
+Mi UP Address 0x300122Af053D7B44352c32B1C9ebb78582E95542
+{
+  LSP0ERC725AccountBaseContract: {
+    address: '0xea42Cb4adc1d00AD706BCB07105C2Ffbe569F1c7',
+    receipt: {
+      to: null,
+      from: '0xdD0E5E20219bc787B0936451d48d6F4602262372',
+      contractAddress: '0xea42Cb4adc1d00AD706BCB07105C2Ffbe569F1c7',
+      transactionIndex: 0,
+      gasUsed: [BigNumber],
+      logsBloom: '0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000480000000000000000000000000000000000000000000000400000000000000000000000000004000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000',
+      blockHash: '0x8e930350443f62a5c554abfa636538244ca29f39e0e62c5b55c128cde0b94d58',
+      transactionHash: '0x337db535bb29498862bc0d4abc1eeef54e65207b7dceb5d0c83d1f42279b8f39',
+      logs: [Array],
+      blockNumber: 2370891,
+      confirmations: 1,
+      cumulativeGasUsed: [BigNumber],
+      effectiveGasPrice: [BigNumber],
+      status: 1,
+      type: 2,
+      byzantium: true,
+      events: [Array]
+    }
+  },
+  LSP6KeyManagerBaseContract: {
+    address: '0x782c91BBE8f631B7024cA33401D8ac7c9F342719',
+    receipt: {
+      to: null,
+      from: '0xdD0E5E20219bc787B0936451d48d6F4602262372',
+      contractAddress: '0x782c91BBE8f631B7024cA33401D8ac7c9F342719',
+      transactionIndex: 1,
+      gasUsed: [BigNumber],
+      logsBloom: '0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000080000000000000000000020000000000000000000000000400000000000000000000000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000',
+      blockHash: '0x17e6144c4ffb018d373d61a0c0ef5566c2c7c032544aa08cb8d6ca6baf31bb00',
+      transactionHash: '0x06923aa381ab5444a72b35bc73fed5267428ae5a55b5a104a151a11a70460a80',
+      logs: [Array],
+      blockNumber: 2370892,
+      confirmations: 1,
+      cumulativeGasUsed: [BigNumber],
+      effectiveGasPrice: [BigNumber],
+      status: 1,
+      type: 2,
+      byzantium: true,
+      events: [Array]
+    }
+  },
+  LSP1UniversalReceiverDelegateBaseContract: {
+    address: '0x09790f7A6ec28E085A7Fb7898F42Fa04156cf948',
+    receipt: {
+      to: null,
+      from: '0xdD0E5E20219bc787B0936451d48d6F4602262372',
+      contractAddress: '0x09790f7A6ec28E085A7Fb7898F42Fa04156cf948',
+      transactionIndex: 0,
+      gasUsed: [BigNumber],
+      logsBloom: '0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000',
+      blockHash: '0x17e6144c4ffb018d373d61a0c0ef5566c2c7c032544aa08cb8d6ca6baf31bb00',
+      transactionHash: '0xa854a918445cf22c2acc683aa55200e1db5dc0245c7b8b4da34b044bcbc0a565',
+      logs: [],
+      blockNumber: 2370892,
+      confirmations: 1,
+      cumulativeGasUsed: [BigNumber],
+      effectiveGasPrice: [BigNumber],
+      status: 1,
+      type: 2,
+      byzantium: true,
+      events: []
+    }
+  },
+  LSP0ERC725Account: {
+    address: '0x300122Af053D7B44352c32B1C9ebb78582E95542',
+    receipt: {
+      to: null,
+      from: '0xdD0E5E20219bc787B0936451d48d6F4602262372',
+      contractAddress: '0x300122Af053D7B44352c32B1C9ebb78582E95542',
+      transactionIndex: 0,
+      gasUsed: [BigNumber],
+      logsBloom: '0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000',
+      blockHash: '0xb2b77cc207d578ecd1e26f9137dc76290ecfac813f526a1be7fd117ccbae2c64',
+      transactionHash: '0x34a2de9e936984b8e68ab6e75c63e7ff4c85fcd9acd610e29df4b60c3bc43a73',
+      logs: [],
+      blockNumber: 2370897,
+      confirmations: 2,
+      cumulativeGasUsed: [BigNumber],
+      effectiveGasPrice: [BigNumber],
+      status: 1,
+      type: 2,
+      byzantium: true,
+      events: []
+    }
+  },
+  LSP1UniversalReceiverDelegate: {
+    address: '0xaaD36d6Eb1B36e1435F798800d3F444b472Bef8E',
+    receipt: {
+      to: null,
+      from: '0xdD0E5E20219bc787B0936451d48d6F4602262372',
+      contractAddress: '0xaaD36d6Eb1B36e1435F798800d3F444b472Bef8E',
+      transactionIndex: 0,
+      gasUsed: [BigNumber],
+      logsBloom: '0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000',
+      blockHash: '0x950aed13e28d0069d6e8f25f60c0cf3ccc491e666ce3b03b3bc5b8eab5a8c72e',
+      transactionHash: '0x4154cd9fc4094f49a7385f8a8e0f535ff7acdddbd711bc13ceecc31f79770bea',
+      logs: [],
+      blockNumber: 2370906,
+      confirmations: 1,
+      cumulativeGasUsed: [BigNumber],
+      effectiveGasPrice: [BigNumber],
+      status: 1,
+      type: 2,
+      byzantium: true,
+      events: []
+    }
+  },
+  LSP6KeyManager: {
+    address: '0x2dAc2e7AA603d183d4A1b1D464411FB26c7C85aa',
+    receipt: {
+      to: null,
+      from: '0xdD0E5E20219bc787B0936451d48d6F4602262372',
+      contractAddress: '0x2dAc2e7AA603d183d4A1b1D464411FB26c7C85aa',
+      transactionIndex: 0,
+      gasUsed: [BigNumber],
+      logsBloom: '0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000',
+      blockHash: '0x7701fe949d5d5c7f8d23159fa8553854fb974261c710e67066b571032d4d2f62',
+      transactionHash: '0xb04664bb5364e93901e1a486d7c1cc0f935309998fe1ecff3b97e63ad2e9caf9',
+      logs: [],
+      blockNumber: 2370907,
+      confirmations: 2,
+      cumulativeGasUsed: [BigNumber],
+      effectiveGasPrice: [BigNumber],
+      status: 1,
+      type: 2,
+      byzantium: true,
+      events: []
+    }
+  }
+}
+-----------------------------------------------
+Done
+
+
+
+
+
+========================================================================================================================================================================================================================================================
+=================================================================================================================== ASSET LSP8 NFT2 ====================================================================================================================
+========================================================================================================================================================================================================================================================
+
+process.env.PRIVATE_KEY:  0xda4dc11b534f0b1330981d896c69aa16069c1a150db5def0116ffc886f1b3e0c
+Loaded address: 0xdD0E5E20219bc787B0936451d48d6F4602262372 from process.env
+Deploying a LSP8 NFT 2.0 with lsp-factory.js
+{
+  type: 'PROXY_DEPLOYMENT',
+  contractName: 'LSP8IdentifiableDigitalAsset',
+  status: 'PENDING',
+  transaction: {
+    type: 2,
+    chainId: 2828,
+    nonce: 26,
+    maxPriorityFeePerGas: BigNumber { _hex: '0x59682f00', _isBigNumber: true },
+    maxFeePerGas: BigNumber { _hex: '0x59682f0e', _isBigNumber: true },
+    gasPrice: null,
+    gasLimit: BigNumber { _hex: '0xf5bf', _isBigNumber: true },
+    to: null,
+    value: BigNumber { _hex: '0x00', _isBigNumber: true },
+    data: '0x3d602d80600a3d3981f3363d3d373d3d3d363d7308a6e191f1e08920d15c8645b54f4bbd82c374dc5af43d82803e903d91602b57fd5bf3',
+    accessList: [],
+    hash: '0xb4d2a2c3e7737498ecfe57a34e9848849645f4ca27523237202cb299f6ed7174',
+    v: 0,
+    r: '0x41c955ef8127dff57609854720bcde0ae35bed83cfda818a158d8cd77b7bb896',
+    s: '0x31d0e3648f08b7b1de835d1e2eef3d895d001e6c4e6db83ee3ed3b3b131a7512',
+    from: '0xdD0E5E20219bc787B0936451d48d6F4602262372',
+    confirmations: 0,
+    wait: [Function (anonymous)]
+  }
+}
+{
+  type: 'PROXY_DEPLOYMENT',
+  contractName: 'LSP8IdentifiableDigitalAsset',
+  status: 'COMPLETE',
+  contractAddress: '0x4610ABce6be7ad99C1e5Ae02499fb59eBd8CF6c9',
+  receipt: {
+    to: null,
+    from: '0xdD0E5E20219bc787B0936451d48d6F4602262372',
+    contractAddress: '0x4610ABce6be7ad99C1e5Ae02499fb59eBd8CF6c9',
+    transactionIndex: 0,
+    gasUsed: BigNumber { _hex: '0xf5bf', _isBigNumber: true },
+    logsBloom: '0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000',
+    blockHash: '0x609822360921e2bf76e4ffb812d705024f0031cac821b0a1e7514dd75eeb7b23',
+    transactionHash: '0xb4d2a2c3e7737498ecfe57a34e9848849645f4ca27523237202cb299f6ed7174',
+    logs: [],
+    blockNumber: 2370984,
+    confirmations: 1,
+    cumulativeGasUsed: BigNumber { _hex: '0xf5bf', _isBigNumber: true },
+    effectiveGasPrice: BigNumber { _hex: '0x59682f07', _isBigNumber: true },
+    status: 1,
+    type: 2,
+    byzantium: true,
+    events: []
+  }
+}
+{
+  type: 'TRANSACTION',
+  contractName: 'LSP8IdentifiableDigitalAsset',
+  functionName: 'initialize(string,string,address)',
+  status: 'PENDING',
+  transaction: {
+    type: 2,
+    chainId: 2828,
+    nonce: 27,
+    maxPriorityFeePerGas: BigNumber { _hex: '0x02540be400', _isBigNumber: true },
+    maxFeePerGas: BigNumber { _hex: '0x02540be400', _isBigNumber: true },
+    gasPrice: null,
+    gasLimit: BigNumber { _hex: '0x038463', _isBigNumber: true },
+    to: '0x4610ABce6be7ad99C1e5Ae02499fb59eBd8CF6c9',
+    value: BigNumber { _hex: '0x00', _isBigNumber: true },
+    data: '0x077f224a000000000000000000000000000000000000000000000000000000000000006000000000000000000000000000000000000000000000000000000000000000a0000000000000000000000000dd0e5e20219bc787b0936451d48d6f4602262372000000000000000000000000000000000000000000000000000000000000000a4b696b6920546f6b656e0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000044b494b4900000000000000000000000000000000000000000000000000000000',
+    accessList: [],
+    hash: '0x5a2807687522c9d6e0cb6fd1e8436ac17139e24c7aef62dd7c12c2b811602ccb',
+    v: 1,
+    r: '0x44d372021bad68ff97427928378493d6af9f8c2b8c155f511d8879b705c1a50b',
+    s: '0x60578977fddc0f9ac85da0b6bb1af5f0b865b0187ad4d731ddd020cd639af530',
+    from: '0xdD0E5E20219bc787B0936451d48d6F4602262372',
+    confirmations: 0,
+    wait: [Function (anonymous)]
+  }
+}
+{
+  type: 'TRANSACTION',
+  contractName: 'LSP8IdentifiableDigitalAsset',
+  functionName: 'initialize(string,string,address)',
+  status: 'COMPLETE',
+  receipt: {
+    to: '0x4610ABce6be7ad99C1e5Ae02499fb59eBd8CF6c9',
+    from: '0xdD0E5E20219bc787B0936451d48d6F4602262372',
+    contractAddress: null,
+    transactionIndex: 0,
+    gasUsed: BigNumber { _hex: '0x01f309', _isBigNumber: true },
+    logsBloom: '0x00000000000000000000000000000000000840000000000000800000000000000000000000000000000000000000000000200000000000000000000000000000000040000000000000000000000000000001000000000000000000000000020000000000020000000000000000000800000000000000000000000000000000400008000000002000000000000000000000000000000080000000000000000000000000000000000000000000000400000000000000000000000008000010000000000000000020000000000000050200001000000400000000000000000020000000040000000000000000000000000001000000000000000000400000000000',
+    blockHash: '0xbc2a2c4f2e963700529c8de627bf7b2802d7e7c62b34ab5695264105a41c9bf1',
+    transactionHash: '0x5a2807687522c9d6e0cb6fd1e8436ac17139e24c7aef62dd7c12c2b811602ccb',
+    logs: [ [Object], [Object], [Object], [Object], [Object] ],
+    blockNumber: 2370989,
+    confirmations: 1,
+    cumulativeGasUsed: BigNumber { _hex: '0x01f309', _isBigNumber: true },
+    effectiveGasPrice: BigNumber { _hex: '0x02540be400', _isBigNumber: true },
+    status: 1,
+    type: 2,
+    byzantium: true,
+    events: [ [Object], [Object], [Object], [Object], [Object] ]
+  }
+}
+LSP8 NFT 2.0 deployment completed
+NFT 2.0 Address 0x4610ABce6be7ad99C1e5Ae02499fb59eBd8CF6c9
+NFT 2.0 Receipt {
+  to: null,
+  from: '0xdD0E5E20219bc787B0936451d48d6F4602262372',
+  contractAddress: '0x4610ABce6be7ad99C1e5Ae02499fb59eBd8CF6c9',
+  transactionIndex: 0,
+  gasUsed: BigNumber { _hex: '0xf5bf', _isBigNumber: true },
+  logsBloom: '0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000',
+  blockHash: '0x609822360921e2bf76e4ffb812d705024f0031cac821b0a1e7514dd75eeb7b23',
+  transactionHash: '0xb4d2a2c3e7737498ecfe57a34e9848849645f4ca27523237202cb299f6ed7174',
+  logs: [],
+  blockNumber: 2370984,
+  confirmations: 1,
+  cumulativeGasUsed: BigNumber { _hex: '0xf5bf', _isBigNumber: true },
+  effectiveGasPrice: BigNumber { _hex: '0x59682f07', _isBigNumber: true },
+  status: 1,
+  type: 2,
+  byzantium: true,
+  events: []
+}
+{
+  LSP8IdentifiableDigitalAsset: {
+    address: '0x4610ABce6be7ad99C1e5Ae02499fb59eBd8CF6c9',
+    receipt: {
+      to: null,
+      from: '0xdD0E5E20219bc787B0936451d48d6F4602262372',
+      contractAddress: '0x4610ABce6be7ad99C1e5Ae02499fb59eBd8CF6c9',
+      transactionIndex: 0,
+      gasUsed: [BigNumber],
+      logsBloom: '0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000',
+      blockHash: '0x609822360921e2bf76e4ffb812d705024f0031cac821b0a1e7514dd75eeb7b23',
+      transactionHash: '0xb4d2a2c3e7737498ecfe57a34e9848849645f4ca27523237202cb299f6ed7174',
+      logs: [],
+      blockNumber: 2370984,
+      confirmations: 1,
+      cumulativeGasUsed: [BigNumber],
+      effectiveGasPrice: [BigNumber],
+      status: 1,
+      type: 2,
+      byzantium: true,
+      events: []
+    }
+  }
+}
+---------------------- Done! ----------------------------
+
+
+

@@ -1,6 +1,6 @@
 import "dotenv/config";
 import { LSPFactory } from "@lukso/lsp-factory.js";
-import {  RPC_ENDPOINT_L14, RPC_ENDPOINT_L16, RPC_ENDPOINT_MUMBAI, RPC_ENDPOINT_GOERLI, RPC_ENDPOINT_GANACHE, L14chainId, L16chainId, MumbaichainId, GoerlichainId, GanachechainId, Ipfs_Lukso_Gateway } from "./constants";
+import {  RPC_ENDPOINT_L14, RPC_ENDPOINT_L16, RPC_ENDPOINT_MUMBAI, RPC_ENDPOINT_GOERLI, RPC_ENDPOINT_GANACHE, L14chainId, L16chainId, MumbaichainId, GoerlichainId, GanachechainId, IPFS_LUKSO_GATEWAY } from "./constants";
 import Web3 from "web3";
 
 // Setup Web3
@@ -12,8 +12,8 @@ console.log("process.env.PRIVATE_KEY: ", process.env.PRIVATE_KEY);
 const myEOA = web3.eth.accounts.wallet.add(process.env.PRIVATE_KEY || "");
 console.log(`Loaded address: ${myEOA.address} from process.env`);
 
-// Initialize the LSPFactory with the L16 RPC endpoint and your EOA's private key, which will deploy the UP smart contracts
-const lspFactory = new LSPFactory(RPC_ENDPOINT_L16, { deployKey: process.env.PRIVATE_KEY, chainId: 2828 });
+// Initialize the LSPFactory with the RPC endpoint and your EOA's private key, which will deploy the UP smart contracts
+const lspFactory = new LSPFactory(RPC_ENDPOINT_L16, { deployKey: process.env.PRIVATE_KEY, chainId: GanachechainId });
 
 const myLSP3MetaData = {
   name: "Edgar-Herrador",

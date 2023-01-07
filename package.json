@@ -19,7 +19,9 @@
   "dependencies": {
     "@erc725/erc725.js": "^0.14.4",
     "@lukso/lsp-factory.js": "^2.4.0",
+    "@lukso/lsp-smart-contracts": "^0.7.0",
     "isomorphic-fetch": "^3.0.0",
+    "siwe": "^1.1.6",
     "web3": "^1.8.0"
   },
   "devDependencies": {
